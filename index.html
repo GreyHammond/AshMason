@@ -3,164 +3,320 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0d">
-  <meta name="description" content="AshMason — a Minecraft adventure server featuring bodyguards, quests, kits, a fluctuating economy, and dDungeons Reborn.">
-  <title>AshMason — Your Adventure Starts Here</title>
+  <meta name="theme-color" content="#0C0B0A">
+  <meta name="description" content="AshMason — a Minecraft adventure server with quests, companions, a fluctuating economy, and procedural dungeons. Java and Bedrock.">
+  <title>AshMason — dDungeons Reborn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
 
   <header class="nav">
-    <a class="brand" href="#top" aria-label="AshMason home">
-      <span class="brand-mark">◆</span>
-      <span>ASHMASON</span>
-    </a>
+    <a class="brand" href="#top">AshMason</a>
     <nav>
-      <a href="#world">World</a>
-      <a href="#dungeons">dDungeons</a>
-      <a href="#bodyguards">Bodyguards</a>
+      <a href="#server">Server</a>
+      <a href="#people">People</a>
+      <a href="#dungeons">Dungeons</a>
+      <a href="#road">The Long Road</a>
       <a href="#guide">Guide</a>
     </nav>
-    <a class="nav-cta" href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">Join Discord</a>
+    <a class="nav-cta" href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">Discord</a>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-art" role="img" aria-label="AshMason fantasy adventure landscape"></div>
-      <div class="hero-vignette"></div>
-      <div class="hero-content">
-        <p class="eyebrow">MINECRAFT • JAVA + BEDROCK</p>
-        <h1>Your adventure<br><em>starts here.</em></h1>
-        <p class="hero-copy">
-          Explore a living world built around quests, dangerous dungeons, companions,
-          town progression, trading, and the freedom to make your own path.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">Join AshMason</a>
-          <a class="button ghost" href="#world">Explore the world</a>
-        </div>
-        <div class="server-card">
-          <div><span>JAVA EDITION</span><strong>129.213.165.170:25565</strong></div>
-          <div><span>BEDROCK EDITION</span><strong>129.213.165.170</strong></div>
-        </div>
-      </div>
-      <div class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></div>
-    </section>
 
-    <section class="intro section" id="world">
-      <div class="section-heading">
-        <p class="eyebrow">WELCOME TO ASHMASON</p>
-        <h2>A world with somewhere to go.</h2>
-        <p>
-          Start in town, earn your keep, build your reputation, and decide how far
-          you want to take the adventure. The world rewards players who fight,
-          explore, gather, trade, and keep pushing forward.
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="ember-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <h1 id="hero-heading" class="visually-hidden">AshMason — dDungeons Reborn</h1>
+        <img class="hero-logo" src="assets/logo.png" alt="AshMason — dDungeons Reborn" width="1200" height="505">
+        <p class="hero-lede">
+          A Minecraft adventure server. Quests, companions, procedural dungeons,
+          and a town full of people who remember what you did last week.
         </p>
-      </div>
-      <div class="feature-grid">
-        <article><span class="icon">⚔</span><h3>Bodyguards</h3><p>Recruit a companion who follows you, grows through kills, takes better gear, and enters dungeons beside you.</p></article>
-        <article><span class="icon">✦</span><h3>Quests</h3><p>Take jobs from the town, earn coins and Quest Points, and unlock new opportunities as your reputation grows.</p></article>
-        <article><span class="icon">◇</span><h3>Kits</h3><p>Pim helps new adventurers get established with a compass and free gear when they arrive.</p></article>
-        <article><span class="icon">◈</span><h3>Fluctuating Economy</h3><p>Market prices shift through the day. Watch for HOT items and decide when to buy or sell.</p></article>
-      </div>
-    </section>
 
-    <section class="cinematic section" id="dungeons">
-      <div class="cinematic-panel">
-        <p class="eyebrow">dDUNGEONS — REBORN</p>
-        <h2>Every descent is different.</h2>
-        <p>
-          The Gatekeeper sends adventurers into procedurally generated dungeons.
-          Three difficulty tiers demand more Quest Points and coins. Each run gives
-          you an objective: clear the spawners, defeat a boss, or recover a lost item.
-        </p>
-        <div class="mini-stats">
-          <div><b>3</b><span>Difficulty tiers</span></div>
-          <div><b>4</b><span>Players per party</span></div>
-          <div><b>∞</b><span>Generated layouts</span></div>
-        </div>
-        <p class="muted">Bring a friend. Share your party code. Dive in together.</p>
-      </div>
-      <div class="dungeon-art" aria-hidden="true">
-        <div class="torch torch-one"></div><div class="torch torch-two"></div>
-        <div class="arch"></div>
-      </div>
-    </section>
-
-    <section class="bodyguards section" id="bodyguards">
-      <div class="split-art">
-        <div class="camp-glow"></div>
-        <div class="camp"></div>
-      </div>
-      <div class="section-heading">
-        <p class="eyebrow">YOUR COMPANION</p>
-        <h2>More than a bodyguard.</h2>
-        <p>
-          Recruit a fighter through the Barracks Captain. Your bodyguard levels from
-          kills and can be outfitted with better gear as they grow. When they hold
-          position, you can deploy a camp: a portable retreat with storage and
-          utility stations.
-        </p>
-        <div class="camp-features">
-          <span>Portable camps</span><span>Camp tiers</span><span>Storage</span><span>Local respawn</span>
+        <div class="join-block">
+          <div class="join-address">
+            <span class="join-label">Java</span>
+            <button class="join-copy" data-copy="129.213.165.170:25565" aria-label="Copy Java address">
+              <span class="join-ip">129.213.165.170:25565</span>
+              <span class="join-copy-icon" aria-hidden="true">Copy</span>
+            </button>
+          </div>
+          <div class="join-address">
+            <span class="join-label">Bedrock</span>
+            <button class="join-copy" data-copy="129.213.165.170" aria-label="Copy Bedrock address">
+              <span class="join-ip">129.213.165.170</span>
+              <span class="join-copy-icon" aria-hidden="true">Copy</span>
+            </button>
+          </div>
+          <a class="join-discord" href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">
+            Join the Discord →
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="progress section">
-      <div class="section-heading centered">
-        <p class="eyebrow">THE LONG ROAD</p>
-        <h2>Earn your place in the world.</h2>
-        <p>Quest Points open doors. The people you help, the dungeons you survive, and the materials you gather all feed into a larger journey.</p>
-      </div>
-      <div class="steps">
-        <div class="step"><b>01</b><h3>Arrive</h3><p>Find Pim, get your compass and starter gear, and learn the town.</p></div>
-        <div class="step"><b>02</b><h3>Earn</h3><p>Work for the Quartermaster, gather supplies, clear threats, and earn QP.</p></div>
-        <div class="step"><b>03</b><h3>Explore</h3><p>Unlock harder quests, discover stories, and enter the dungeons.</p></div>
-        <div class="step"><b>04</b><h3>Go Further</h3><p>Fight, explore, gather and trade across the world to uncover what comes next.</p></div>
+    <!-- WHAT IT IS -->
+    <section class="pitch" id="server">
+      <div class="pitch-inner">
+        <h2>Not a hub. Not PvP. Not another vanilla box.</h2>
+        <p class="pitch-lede">
+          AshMason is a built world with a town, a market, a guild of hunters,
+          exiles with stories, and a procedural dungeon at the edge of the map.
+          You show up, earn your keep, and slowly become someone the town knows.
+        </p>
+
+        <dl class="pillars">
+          <div>
+            <dt>Cross-play</dt>
+            <dd>Java and Bedrock in the same world. Bring anyone with a copy of the game.</dd>
+          </div>
+          <div>
+            <dt>Companions</dt>
+            <dd>Recruit a bodyguard. Level them from kills. Camp with them when you rest.</dd>
+          </div>
+          <div>
+            <dt>Living market</dt>
+            <dd>Prices shift through the day. <span class="tag hot">HOT</span> pays more, <span class="tag glut">GLUT</span> pays less. Watch the board.</dd>
+          </div>
+          <div>
+            <dt>dDungeons Reborn</dt>
+            <dd>Procedural dungeons at three tiers. Solo or four-player party. Clear the objective or leave with nothing.</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
-    <section class="guide section" id="guide">
-      <div class="section-heading">
-        <p class="eyebrow">ADVENTURER'S GUIDE</p>
-        <h2>Know the town before you leave it.</h2>
-        <p>Keep this quick reference handy when you start.</p>
-      </div>
-      <div class="guide-image-wrap">
-        <img src="assets/adventurers-guide.png" alt="AshMason Adventurer's Guide poster">
-      </div>
-      <div class="npc-grid">
-        <div><b>Pim</b><span>Compass + free gear</span></div>
-        <div><b>Quartermaster</b><span>Starter quests</span></div>
-        <div><b>Flint</b><span>Monster hunter</span></div>
-        <div><b>Vale</b><span>Ender-touched quest chain</span></div>
-        <div><b>Barracks Captain</b><span>Bodyguard recruitment</span></div>
-        <div><b>Gatekeeper</b><span>Dungeon entry</span></div>
-        <div><b>Xumar</b><span>Daily bounties</span></div>
-        <div><b>Market Stalls</b><span>Food, arrows, tools and gear</span></div>
+    <!-- PEOPLE -->
+    <section class="people" id="people">
+      <div class="people-inner">
+        <div class="people-head">
+          <h2>The people you'll meet</h2>
+          <p>
+            Each one holds a door. Some open the first day. Some wait until
+            the town decides you're worth talking to.
+          </p>
+        </div>
+
+        <ol class="ledger">
+          <li>
+            <span class="ledger-name">Pim</span>
+            <span class="ledger-role">Hands out the town compass and a couple of free kits when you arrive. Come back every four hours.</span>
+            <span class="ledger-gate">Open</span>
+          </li>
+          <li>
+            <span class="ledger-name">Quartermaster</span>
+            <span class="ledger-role">Posts starter jobs — clear a threat, gather a stack of something, earn your first Quest Points.</span>
+            <span class="ledger-gate">Open</span>
+          </li>
+          <li>
+            <span class="ledger-name">Odell</span>
+            <span class="ledger-role">Grocer. Drops crops and materials into his crate; he pays for what he wants and hands the rest back.</span>
+            <span class="ledger-gate">Open</span>
+          </li>
+          <li>
+            <span class="ledger-name">Midge, Wren, Gus</span>
+            <span class="ledger-role">The three open stalls. Food, arrows, tools. Prices move every twenty minutes.</span>
+            <span class="ledger-gate">Open</span>
+          </li>
+          <li>
+            <span class="ledger-name">Barracks Captain</span>
+            <span class="ledger-role">Sells you a bodyguard for 100 coins. Warrior or Ranger. Fittings, camp gear, and a class you can grow through ten tiers.</span>
+            <span class="ledger-gate">100 coins</span>
+          </li>
+          <li>
+            <span class="ledger-name">Flint</span>
+            <span class="ledger-role">Monster hunter. Harder contracts, better coin — pillagers, ravagers, and worse.</span>
+            <span class="ledger-gate">15 QP</span>
+          </li>
+          <li>
+            <span class="ledger-name">Ash</span>
+            <span class="ledger-role">An exile with a nether-warped past. Help him through his chain and Thistle's apothecary opens for you.</span>
+            <span class="ledger-gate">15 QP</span>
+          </li>
+          <li>
+            <span class="ledger-name">Vale</span>
+            <span class="ledger-role">Ender-touched. Won't speak to strangers. Finish her chain and Nook's stall opens — and further doors after that.</span>
+            <span class="ledger-gate">25 QP</span>
+          </li>
+          <li>
+            <span class="ledger-name">Thistle</span>
+            <span class="ledger-role">Apothecary. Potions, brewing materials, nether goods.</span>
+            <span class="ledger-gate">Ash chain</span>
+          </li>
+          <li>
+            <span class="ledger-name">Nook</span>
+            <span class="ledger-role">Curiosities from the End. Later on, the road to elytra runs through her too.</span>
+            <span class="ledger-gate">Vale chain</span>
+          </li>
+          <li>
+            <span class="ledger-name">Gatekeeper</span>
+            <span class="ledger-role">Takes your key, opens the doors, drops you into a dungeon at your tier.</span>
+            <span class="ledger-gate">Key</span>
+          </li>
+          <li>
+            <span class="ledger-name">Xumar</span>
+            <span class="ledger-role">Posts daily bounties near Flint. Three contracts, rotated every day. Bounty pay covers your dungeon entry and stacks on top of clear rewards.</span>
+            <span class="ledger-gate">Daily</span>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="cta section">
-      <p class="eyebrow">THE WORLD IS WAITING</p>
-      <h2>Bring a friend.<br><em>Find your adventure.</em></h2>
-      <p>Join the AshMason community, get the latest updates, find a party, and start exploring.</p>
-      <a class="button primary large" href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">Join the AshMason Discord</a>
-      <div class="final-server">
-        <span>JAVA</span><strong>129.213.165.170:25565</strong>
-        <span>BEDROCK</span><strong>129.213.165.170</strong>
+    <!-- DUNGEONS -->
+    <section class="dungeons" id="dungeons">
+      <div class="dungeons-inner">
+        <div class="dungeons-copy">
+          <p class="section-mark">dDungeons Reborn</p>
+          <h2>Every descent generates itself.</h2>
+          <p>
+            The Gatekeeper takes your key and drops you into a dungeon that
+            didn't exist five seconds ago. Layouts, mobs, spawner banks, loot —
+            all rolled at entry. Every run gives you an objective: clear the
+            spawners, kill the boss, or recover a marked item. Complete it
+            and you're paid on the spot. Die or walk out early and you leave
+            with what you can carry.
+          </p>
+          <p>
+            Bring up to three friends. <code>/party create</code>, share the
+            code, dive in together. Bodyguards come too.
+          </p>
+        </div>
+
+        <div class="tiers">
+          <article class="tier">
+            <div class="tier-head">
+              <span class="tier-label">Tier I</span>
+              <h3>Low</h3>
+            </div>
+            <dl class="tier-stats">
+              <dt>Key</dt><dd>10 coins</dd>
+              <dt>Requires</dt><dd>Nothing</dd>
+              <dt>Cooldown</dt><dd>~10 min</dd>
+              <dt>Reward</dt><dd>Common → Rare loot bundles</dd>
+            </dl>
+          </article>
+          <article class="tier">
+            <div class="tier-head">
+              <span class="tier-label">Tier II</span>
+              <h3>Mid</h3>
+            </div>
+            <dl class="tier-stats">
+              <dt>Key</dt><dd>100 coins</dd>
+              <dt>Requires</dt><dd>25 QP</dd>
+              <dt>Cooldown</dt><dd>~30 min</dd>
+              <dt>Reward</dt><dd>Rare → Epic + 100–200 coins</dd>
+            </dl>
+          </article>
+          <article class="tier">
+            <div class="tier-head tier-head-endgame">
+              <span class="tier-label">Tier III</span>
+              <h3>Endgame</h3>
+            </div>
+            <dl class="tier-stats">
+              <dt>Key</dt><dd>250–500 coins</dd>
+              <dt>Requires</dt><dd>50 QP</dd>
+              <dt>Cooldown</dt><dd>~2 hr</dd>
+              <dt>Reward</dt><dd>Legendary, Mythical + up to 500 coins</dd>
+            </dl>
+          </article>
+        </div>
       </div>
     </section>
+
+    <!-- THE LONG ROAD -->
+    <section class="road" id="road">
+      <div class="road-inner">
+        <p class="section-mark">The Long Road</p>
+        <h2>What all of this is leading to.</h2>
+        <div class="road-body">
+          <p>
+            Every quest, every bounty, every clean dungeon run pushes you
+            further into a story the town has been telling itself for a while.
+            The Quartermaster teaches you to hold your own. Flint teaches you
+            to hunt. Ash teaches you what it's like to be exiled from a place
+            you can't stop thinking about.
+          </p>
+          <p class="road-pull">
+            And Vale knows things about flight.
+          </p>
+          <p>
+            About wings. About what it takes to leave the ground for good.
+            But she won't share any of it with someone the town doesn't trust.
+            Prove yourself — through combat, through exploration, through the
+            things you can only find in open air, deep underground, or at the
+            bottom of the ocean — and eventually she'll show you the way up.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section class="guide" id="guide">
+      <div class="guide-inner">
+        <div class="guide-head">
+          <p class="section-mark">Poster</p>
+          <h2>The Adventurer's Guide.</h2>
+          <p>
+            Everything on one page. Print it, pin it, or keep it open on
+            a second monitor while you play.
+          </p>
+          <a class="guide-download" href="assets/adventurers-guide.jpg" download>
+            Download the guide →
+          </a>
+        </div>
+        <a class="guide-poster" href="assets/adventurers-guide.jpg" target="_blank" rel="noopener">
+          <img src="assets/adventurers-guide.jpg" alt="AshMason Adventurer's Guide — full illustrated poster" loading="lazy">
+        </a>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section class="join" id="join">
+      <div class="join-inner">
+        <p class="section-mark">Join</p>
+        <h2>Come see who you become out here.</h2>
+
+        <div class="join-final">
+          <div class="join-final-address">
+            <span class="join-label">Java Edition</span>
+            <button class="join-copy join-copy-large" data-copy="129.213.165.170:25565">
+              <span class="join-ip">129.213.165.170:25565</span>
+              <span class="join-copy-icon" aria-hidden="true">Copy</span>
+            </button>
+          </div>
+          <div class="join-final-address">
+            <span class="join-label">Bedrock Edition</span>
+            <button class="join-copy join-copy-large" data-copy="129.213.165.170">
+              <span class="join-ip">129.213.165.170</span>
+              <span class="join-copy-icon" aria-hidden="true">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <a class="join-discord join-discord-large" href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">
+          Join the AshMason Discord →
+        </a>
+
+        <p class="join-tag">Java + Bedrock cross-play via Geyser + Floodgate. No mods required.</p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <span>ASHMASON</span>
-    <span>Wilderness Bound • Bodyguard Camp Expansion</span>
-    <a href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">Discord</a>
+    <div class="foot-inner">
+      <span class="foot-brand">AshMason</span>
+      <span class="foot-mid">Paper 26.3 · Denizen · dDungeons Reborn</span>
+      <a href="https://discord.gg/KQpdxSrRwb" target="_blank" rel="noopener">Discord</a>
+    </div>
   </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
   <script src="script.js"></script>
 </body>
